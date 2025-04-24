@@ -20,11 +20,9 @@ const Main = () => {
       <button onClick={toggleTheme}>
         Switch to {isDark ? "Light" : "Dark"} Mode
       </button>
-      <div className="app">
-        <h1>Task Manager App</h1>
-        <TaskInput />
-        <TaskList />
-      </div>
+      <h1>Task Manager App</h1>
+      <TaskInput />
+      <TaskList />
     </div>
   );
 };
