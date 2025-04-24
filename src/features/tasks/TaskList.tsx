@@ -36,7 +36,9 @@ const TaskList = () => {
                     {...provided.dragHandleProps}
                     className={task.completed ? "completed" : ""}
                   >
-                    <span>{task.text}</span>
+                    <span onClick={() => dispatch(toggleTask(task.id))}>
+                      {task.text}
+                    </span>
                     <button onClick={() => dispatch(deleteTask(task.id))}>
                       ❌
                     </button>
