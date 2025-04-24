@@ -1,6 +1,41 @@
-# Getting Started with Create React App
+# 📝 Task Manager App
+
+This is a task management app built using **React**, **TypeScript**, and **Redux Toolkit**. It supports adding, deleting, and marking tasks as complete, along with **drag-and-drop** reordering and **dark mode**.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+---
+
+## ✨ Features
+
+- ✅ Add, delete, and complete tasks
+- 🔄 Drag-and-drop task reordering (using `react-beautiful-dnd`)
+- 🌙 Dark mode toggle via Context API
+- 💾 Data persisted with `localStorage`
+- 📱 Responsive design for mobile and desktop
+
+---
+
+## 📦 Tech Stack
+
+- React + TypeScript
+- Redux Toolkit
+- react-beautiful-dnd
+- CSS (custom styling)
+- localStorage
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository:
+
+```bash
+git clone https://github.com/azamatbekmurat/task-manager
+cd task-manager
+npm install
+npm run start
+Visit http://localhost:3000 to view it in your browser.
 
 ## Available Scripts
 
@@ -68,3 +103,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### License
+
+*This software is licensed under the MIT license.*
