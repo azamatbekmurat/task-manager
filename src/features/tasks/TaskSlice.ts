@@ -45,8 +45,12 @@ export const taskSlice = createSlice({
       state.tasks = state.tasks.filter((t) => t.id !== action.payload);
       saveToStorage(state.tasks);
     },
+    updateTaskOrder: (state, action: PayloadAction<Task[]>) => {
+      state.tasks = action.payload;
+      saveToStorage(state.tasks);
+    }
   },
 });
 
-export const { addTask, toggleTask, deleteTask } = taskSlice.actions;
+export const { addTask, toggleTask, deleteTask, updateTaskOrder } = taskSlice.actions;
 export default taskSlice.reducer;
