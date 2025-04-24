@@ -12,6 +12,7 @@ body {
   background: white;
   border-radius: 10px;
   margin-top: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .input-container {
@@ -50,4 +51,31 @@ button {
 .task-list li.completed span {
   text-decoration: line-through;
   color: #888;
+}
+
+/* 🔻 RESPONSIVENESS */
+@media (max-width: 600px) {
+  .app {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  input,
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
